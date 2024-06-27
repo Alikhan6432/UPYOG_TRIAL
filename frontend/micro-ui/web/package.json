@@ -8,10 +8,14 @@
     "micro-ui-internals/packages/react-components",
     "micro-ui-internals/packages/modules/common",
     "micro-ui-internals/packages/modules/core",
-    "micro-ui-internals/packages/modules/commonPt",
     "micro-ui-internals/packages/modules/dss",
-    "micro-ui-internals/packages/modules/pt",
-    "micro-ui-internals/packages/modules/obps"
+    "micro-ui-internals/packages/modules/asset",
+    "micro-ui-internals/packages/modules/ew",
+    "micro-ui-internals/packages/modules/ptr",
+    "micro-ui-internals/packages/modules/obps",
+    "micro-ui-internals/packages/modules/chb"
+
+
   ],
   "engines": {
     "node": ">=14"
@@ -37,6 +41,9 @@
     "@upyog/digit-ui-module-ws": "1.7.0-beta.12",
     "@upyog/digit-ui-react-components": "1.7.0-beta.4",
     "@upyog-niua/upyog-ui-module-ptr": "1.0.7",
+    "@upyog-niua/upyog-ui-module-asset": "1.0.0",
+    "@upyog-niua/upyog-ui-module-ew": "1.0.0",
+    "@upyog-niua/upyog-ui-module-chb": "1.0.7",
     "babel-loader": "8.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

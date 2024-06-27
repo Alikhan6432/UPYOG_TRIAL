@@ -33,6 +33,17 @@ import {
   PTRLinks,
   PTRComponents,
 } from "@upyog-niua/upyog-ui-module-ptr";
+
+import { 
+  EWModule, 
+  EWLinks, 
+  EWComponents }
+  from "@upyog-niua/upyog-ui-module-ew";
+
+import {  
+  ASSETModule, 
+  ASSETLinks,
+  ASSETComponents } from "@upyog-niua/upyog-ui-module-asset";
 import { initReceiptsComponents, ReceiptsModule } from "@upyog/digit-ui-module-receipts";
 import { initOBPSComponents } from "@upyog/digit-ui-module-obps";
 import { initNOCComponents } from "@upyog/digit-ui-module-noc";
@@ -41,7 +52,7 @@ import { initWSComponents } from "@upyog/digit-ui-module-ws";
 import { initCustomisationComponents } from "./Customisations";
 import { initCommonPTComponents } from "@upyog/digit-ui-module-commonpt";
 import { initBillsComponents } from "@upyog/digit-ui-module-bills";
-// import { initReportsComponents } from "@egovernments/digit-ui-module-reports";
+import {CHBModule,CHBLinks,CHBComponents} from "@upyog-niua/upyog-ui-module-chb";
 
 initLibraries();
 
@@ -69,7 +80,10 @@ const enabledModules = [
   "FireNoc",
   "Birth",
   "Death",
-  "PTR"
+  "PTR",
+  "ASSET",
+  "EW",
+  "CHB"
 ];
 window.Digit.ComponentRegistryService.setupRegistry({
   ...paymentConfigs,
@@ -87,6 +101,15 @@ window.Digit.ComponentRegistryService.setupRegistry({
   PTRModule,
   PTRLinks,
   ...PTRComponents,
+  ASSETLinks,
+  ASSETModule,
+  ...ASSETComponents,
+  EWModule,
+  EWLinks,
+  ...EWComponents,
+  CHBModule,
+  CHBLinks,
+  ...CHBComponents
 });
 
 initPGRComponents();

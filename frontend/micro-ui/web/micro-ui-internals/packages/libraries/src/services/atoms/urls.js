@@ -1,3 +1,5 @@
+import { update } from "lodash";
+
 const Urls = {
   MDMS: `/egov-mdms-service/v1/_search`,
   WorkFlow: `/egov-workflow-v2/egov-wf/businessservice/_search`,
@@ -97,6 +99,25 @@ const Urls = {
     payment_search: "/collection-services/payments/pet-services/_search",
     
   },
+
+  ew: {
+    create:"/ewaste-services/ewaste-request/_create",
+    search:"/ewaste-services/ewaste-request/_search",
+    update:"/ewaste-services/ewaste-request/_update",
+  },
+
+  asset:{
+    create:"/asset-services/v1/assets/_create",
+    search:"/asset-services/v1/assets/_search",
+    update:"/asset-services/v1/assets/_update"
+  },
+
+  chb: {    
+    create:"/chb-services/booking/v1/_create",
+    search:"/chb-services/booking/v1/_search",
+    update:"/chb-services/booking/v1/_update",
+  },
+
 
 
   dss: {

@@ -223,6 +223,40 @@ const ptrAccess = () => {
   return PTR_ACCESS?.length > 0;
 };
 
+const ewAccess = () => {
+  const userInfo = Digit.UserService.getUser();
+  
+  
+  const userRoles = userInfo?.info?.roles?.map((roleData) => roleData?.code);
+  const ewRoles = ["EW_VENDOR"];
+
+  const EW_ACCESS = userRoles?.filter((role) => ewRoles?.includes(role));
+
+  return EW_ACCESS?.length > 0;
+};
+
+const chbAccess = () => {
+  const userInfo = Digit.UserService.getUser();
+  
+  const userRoles = userInfo?.info?.roles?.map((roleData) => roleData?.code);
+  const chbRoles = ["CHB_APPROVER", "CHB_VERIFIER"];
+
+  const CHB_ACCESS = userRoles?.filter((role) => chbRoles?.includes(role));
+
+  return CHB_ACCESS?.length > 0;
+};
+
+const assetAccess = () => {
+  const userInfo = Digit.UserService.getUser();
+  
+  const userRoles = userInfo?.info?.roles?.map((roleData) => roleData?.code);
+  const assetRoles = ["ASSET_INITIATOR","ASSET_VERIFIER"];
+
+  const ASSET_ACCESS = userRoles?.filter((role) => assetRoles?.includes(role));
+
+  return ASSET_ACCESS?.length > 0;
+};
+
 const tlAccess = () => {
   const userInfo = Digit.UserService.getUser();
   const userRoles = userInfo?.info?.roles?.map((roleData) => roleData?.code);
@@ -303,17 +337,21 @@ export default {
   pt,
   ptAccess,
   ptrAccess,
+  assetAccess,
   NOCAccess,
   mCollectAccess,
   receiptsAccess,
   didEmployeeHasRole,
   hrmsAccess,
   getPattern,
+  chbAccess,
   hrmsRoles,
   getUnique,
   tlAccess,
   wsAccess,
   swAccess,
+  ewAccess,
+
 
   ...privacy
 };

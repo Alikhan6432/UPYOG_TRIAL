@@ -12,6 +12,9 @@ import { configNOCApproverApplication } from "./NOCApproverApplication";
 import { configWSApproverApplication } from "./WSApproverApplication";
 import { configWSDisConnectApplication } from "./WSDisconnectApplication";
 import { configPTRApproverApplication } from "./PTRApproverApplication";
+import { configASSETApproverApplication } from "./ASSETApproverApplication";
+import { configCHBApproverApplication } from "./CHBApproverApplication";
+import { configEWApproverApplication } from "./EWApproverApplication";
 
 
 export {
@@ -28,5 +31,8 @@ export {
   configNOCApproverApplication,
   configWSApproverApplication,
   configWSDisConnectApplication,
-  configPTRApproverApplication
+  configPTRApproverApplication,
+  configASSETApproverApplication,
+  configCHBApproverApplication,
+  configEWApproverApplication
 };

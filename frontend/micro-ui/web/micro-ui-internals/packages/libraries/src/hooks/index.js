@@ -265,6 +265,37 @@ import usePetDocumentSearch from "./ptr/usePetDocumentSearch";
 import useMyPetPayments from "./ptr/useMyPetPayments";
 import useTenantsPTR from "./ptr/useTenants";
 
+import useAssetClassification from "./asset/useAssetClassification";
+import useAssetType from "./asset/useAssetType";
+import useAssetDocumentsMDMS from "./asset/useAssetDocumentsMDMS";
+import useAssetSubType from "./asset/useAssetSubType";
+import useAssetdetail from "./asset/useAssetdetail";
+import useAssetCreateAPI from "./asset/useAssetCreateAPI";
+import useAssetApplicationDetail from "./asset/useAssetApplicationDetail";
+import useASSETSearch from "./asset/useASSETSearch";
+import useTenantsASSET from "./asset/useTenants"
+import useASSETApplicationAction from "./asset/useASSETApplicationAction";
+import useAssetparentSubType from "./asset/useAssetparentSubType";
+import useProductPriceMDMS from "./ew/useProductPriceMDMS";
+import useSpecialCategory from "./chb/useSpecialCategory";
+import useResidentType from "./chb/useResidentType";
+import usePurpose from "./chb/usePurpose";
+import useChbCreateAPI from "./chb/useChbCreateAPI";
+import useChbDocumentsMDMS from "./chb/useChbDocumentsMDMS";
+import useEWCreateAPI from "./ew/useEWCreateAPI";
+import useTenantsEW from "./ew/useTenants";
+import useEWSearch from "./ew/useEWSearch";
+import useEwApplicationDetail from "./ew/useEwApplicationDetail";
+import useEWApplicationAction from "./ew/useEWApplicationAction";
+
+import useChbDocumentSearch from "./chb/useChbDocumentSearch";
+import useChbApplicationDetail from "./chb/useChbApplicationDetail";
+import useChbSearch from "./chb/useChbSearch";
+import useTenantsCHB from "./chb/useTenants";
+import useChbApplicationAction from "./chb/useChbApplicationAction";
+import useServiceSearchCHB from "./chb/useServiceSearchCHB";
+import useChbCommunityHalls from "./chb/useChbCommunityHalls";
+import useChbHallCode from "./chb/useChbHallCode"
 
 import createTokenAPI from "./digiLockerApi/createTokenAPI";
 
@@ -287,6 +318,44 @@ const pgr = {
   useMDMS: usePGRMDMS,
 };
 
+const ew = {
+  useProductPriceMDMS,
+  useEWCreateAPI,
+  useTenants: useTenantsEW,
+  useEWSearch,
+  useEwApplicationDetail,
+  useEWApplicationAction,
+};
+
+const asset = {
+  useAssetClassification,
+  useAssetType,
+  useAssetDocumentsMDMS,
+  useAssetSubType,
+  useAssetdetail,
+  useAssetCreateAPI,
+  useAssetApplicationDetail,
+  useASSETApplicationAction,
+  useASSETSearch,
+  useAssetparentSubType,
+  useTenants: useTenantsASSET
+};
+
+const chb={
+  useSpecialCategory,
+  useResidentType,
+  usePurpose,
+  useChbCreateAPI,
+  useChbDocumentsMDMS,
+  useChbDocumentSearch,
+  useChbApplicationDetail,
+  useChbSearch,
+  useTenants:useTenantsCHB,
+  useChbApplicationAction,
+  useServiceSearchCHB,
+  useChbCommunityHalls,
+  useChbHallCode
+}
 
 const fsm = {
   useTenants: useTenantsFSM,
@@ -568,6 +637,7 @@ const Hooks = {
   fsm,
   pt,
   ptr,
+  ew,
   dss,
   mcollect,
   hrms,
@@ -575,10 +645,12 @@ const Hooks = {
   receipts,
   obps,
   events,
+  chb,
   engagement,
   survey,
   noc,
   ws,
+  asset,
   useCustomMDMS,
   useCustomAPIHook,
   reports,
