@@ -113,7 +113,7 @@
 		<postgres-version>42.1.4</postgres-version>
 
 		<!-- Other application dependency versions -->
-		<struts2-version>2.5.14.1</struts2-version>
+		<struts2-version>7.1.1</struts2-version>
 		<struts2-jquery-version>4.0.2</struts2-jquery-version>
 		<xstream-version>1.4.10</xstream-version>
 		<spring-version>4.3.11.RELEASE</spring-version>
@@ -122,8 +122,8 @@
 		<spring-data-jpa-envers-version>1.0.6.RELEASE</spring-data-jpa-envers-version>
 		<spring-security-version>4.2.3.RELEASE</spring-security-version>
 		<spring-security-oauth2-version>2.2.0.RELEASE</spring-security-oauth2-version>
-		<spring-data-elasticsearch>2.0.6.RELEASE</spring-data-elasticsearch>
-		<elastic-search-version>2.4.6</elastic-search-version>
+		<spring-data-elasticsearch>3.0.9.RELEASE</spring-data-elasticsearch>
+		<elastic-search-version>8.18.7</elastic-search-version>
 		<apache-tiles-version>3.0.7</apache-tiles-version>
 		<embedded-redis-version>0.6</embedded-redis-version>
 		<quartz-version>2.3.0</quartz-version>
